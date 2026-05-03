@@ -1,25 +1,25 @@
 class Mdserve < Formula
   desc "A Rust web server that serves folders of markdown files as websites."
   homepage "https://github.com/prbski/mdserve"
-  version "0.0.2"
+  version "0.0.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/prbski/mdserve/releases/download/v0.0.2/mdserve-aarch64-apple-darwin.tar.xz"
-      sha256 "f02b4138a5d52d4fafa9869a3e3d24a72c91329455f83a8f830110e5f7ddb105"
+      url "https://github.com/prbski/mdserve/releases/download/v0.0.3/mdserve-aarch64-apple-darwin.tar.xz"
+      sha256 "20c51dc7d3daa79ded7e2f075e5bd62d0e45a72575f9de23e2e063f8f5435c28"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/prbski/mdserve/releases/download/v0.0.2/mdserve-x86_64-apple-darwin.tar.xz"
-      sha256 "60e00564cc2604b3e19349aea84f7821d62f38d5c1b1ca0ae04167e63f6bed07"
+      url "https://github.com/prbski/mdserve/releases/download/v0.0.3/mdserve-x86_64-apple-darwin.tar.xz"
+      sha256 "25dff418418ddcdffdcc8017b138b84bbb5367680cbbf1021dd2fd15bda9a013"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/prbski/mdserve/releases/download/v0.0.2/mdserve-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "6045af52ef5a2377961d7c8ed28d669085c931f11a7cf9d4a2a55f893a6ac977"
+      url "https://github.com/prbski/mdserve/releases/download/v0.0.3/mdserve-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "414d55f1d17c2f527301fff7f55b18a7018d8530ea4611c2eed8aa143bf0b01a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/prbski/mdserve/releases/download/v0.0.2/mdserve-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "50bc4f5c5fe6e5d252e8ea8d435d1eb713df5f2b96ed76f7f6f6a0e4b5a6dde4"
+      url "https://github.com/prbski/mdserve/releases/download/v0.0.3/mdserve-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "2b0c8bc1e29d2cade80dc7bdbb4a8e75e01ee384cd7ad071124af05543d9ea53"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
