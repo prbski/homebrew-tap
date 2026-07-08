@@ -1,25 +1,25 @@
 class Mdshelf < Formula
   desc "A Rust web server that serves folders of markdown files as websites."
   homepage "https://github.com/prbski/mdshelf"
-  version "1.0.7"
+  version "1.0.8"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/prbski/mdshelf/releases/download/v1.0.7/mdshelf-aarch64-apple-darwin.tar.xz"
-      sha256 "fb3bebb8aee15caf0ea0379c130e3a07c68f284566881df79a6e001e3bfb6b86"
+      url "https://github.com/prbski/mdshelf/releases/download/v1.0.8/mdshelf-aarch64-apple-darwin.tar.xz"
+      sha256 "1733653ae803ac943111043bfd3573ac245978fb9fd8dde4964db373c7fa7c11"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/prbski/mdshelf/releases/download/v1.0.7/mdshelf-x86_64-apple-darwin.tar.xz"
-      sha256 "8e9bd0327559f8f79fdf4b3a6ce1278b13bb4a2e2d0bc53ea10e1a9924fd058e"
+      url "https://github.com/prbski/mdshelf/releases/download/v1.0.8/mdshelf-x86_64-apple-darwin.tar.xz"
+      sha256 "7999904e5733f33f321e49e29ed6c441260587881ac358c1d3a9cd4b9d3e4020"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/prbski/mdshelf/releases/download/v1.0.7/mdshelf-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "f721e824b608f972ba05d596a89457dd20994a19ad0c3ae0d726835f22151de4"
+      url "https://github.com/prbski/mdshelf/releases/download/v1.0.8/mdshelf-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "e74237a8f6c7c41d1ee4ae08c5feb6e633a7b826d009eceb8b0794da08e99acb"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/prbski/mdshelf/releases/download/v1.0.7/mdshelf-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "857e08913d033b6b3f14a9bf7b75b38d253905067bd4040874690955e2d78355"
+      url "https://github.com/prbski/mdshelf/releases/download/v1.0.8/mdshelf-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "8160ce9b17e20dd228fd9411a8b2db3fc2213912f4044d89082b523733d2857c"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
